@@ -1,0 +1,81 @@
+  @font-face {
+    font-family: "Laca Light";
+    src: url("../fonts/Laca\ Light.otf") format("otf"),
+  }
+  
+  @font-face {
+    font-family: "Laca Regular";
+    src: url("../fonts/Laca\ Regular.otf") format("otf"),
+  }
+
+  @font-face {
+    font-family: "Laca Semibold";
+    src: url("../fonts/Laca\ Semibold.otf") format("otf"),
+  }
+
+  @font-face {
+    font-family: "Laca Bold";
+    src: url("../fonts/Laca\ Bold.otf") format("otf"),
+  }
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:0;
+    font-family: "Laca Light";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*::-moz-selection {
+  color: #9f24aa;
+  background-color: #000;
+}
+
+*::selection {
+  color: #9f24aa;
+  background-color: #000;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+
+a{
+    display: block;
+    text-decoration: none !important;
+}
+
+p{
+    margin:0;
+}
+
+li{
+    list-style: none;
+}
+
+
+.wrapAll{
+    width:100%;
+    min-height: 100vh;
+}
+
+

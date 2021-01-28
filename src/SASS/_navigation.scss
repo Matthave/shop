@@ -1,0 +1,151 @@
+.nav{
+    position:fixed;
+    top:0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:100%;
+    height: 87px;
+    background-color: rgba(0,0,0,0.95);
+
+
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width:100%;
+        padding:0px 15px;
+    }
+    
+    &__link{
+        text-transform: uppercase;
+        padding: 5px ;
+        margin:0 10px;
+        color:#fff;
+    }
+
+    &__logo{
+        width:88px;
+        height: 143px;
+    }
+}
+
+
+.navMobile{
+    position:fixed;
+    top:0;
+    left:calc(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: 0.2s;
+    z-index: 999;
+
+    &--show{
+        left:calc(100% - 100vw);
+    }
+
+
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width:100%;
+        padding:50px 0px;
+    }
+    
+    &__link{
+        text-transform: uppercase;
+        padding: 10px 15px ;
+        margin:5px 0px;
+        font-size: 15px;
+        color:#fff;
+        transition: 0.2s;
+
+        &:hover{
+            letter-spacing: 3px;
+        }
+    }
+
+    &__logo{
+        width:70px;
+        margin:17.5px 0px;
+    }
+}
+
+
+.burger{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:60px;
+    height: 45px;
+    cursor: pointer;
+
+    &__bar{
+        width:100%;
+        height: 7.5px;
+    }
+
+    &__barOne{
+        background-color: #1E2D82;
+    }
+
+    &__barTwo{
+        background-color: #4D1E87;
+    }
+
+    &__barThree{
+        background-color: #80229F;
+    }
+}
+
+
+.burgerClose{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:75px;
+    height: 75px;
+    margin-top:50px;
+    cursor: pointer;
+
+    & > div {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:100px;
+        height: 7.5px;
+        background-color: #fff;
+        background: rgb(3,49,206);
+        background: linear-gradient(135deg, rgba(3,49,206,0.5) 0%, rgba(159,36,170,1) 100%);
+
+    }
+
+    &__one{
+        transform: translate(-50%,-50%) rotate(-45deg);
+        transform-origin: center;
+    }
+
+    &__two{
+        transform: translate(-50%,-50%) rotate(45deg);
+        transform-origin: center;
+    }
+}
