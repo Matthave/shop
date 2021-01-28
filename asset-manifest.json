@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shop/static/css/main.5259dc9a.chunk.css",
+    "main.js": "/shop/static/js/main.3026b525.chunk.js",
+    "main.js.map": "/shop/static/js/main.3026b525.chunk.js.map",
+    "runtime-main.js": "/shop/static/js/runtime-main.704a81b3.js",
+    "runtime-main.js.map": "/shop/static/js/runtime-main.704a81b3.js.map",
+    "static/js/2.50023f36.chunk.js": "/shop/static/js/2.50023f36.chunk.js",
+    "static/js/2.50023f36.chunk.js.map": "/shop/static/js/2.50023f36.chunk.js.map",
+    "index.html": "/shop/index.html",
+    "static/css/main.5259dc9a.chunk.css.map": "/shop/static/css/main.5259dc9a.chunk.css.map",
+    "static/js/2.50023f36.chunk.js.LICENSE.txt": "/shop/static/js/2.50023f36.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/shop/static/media/Laca Semibold.11337603.otf",
+    "static/media/mp.841ca81b.svg": "/shop/static/media/mp.841ca81b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.704a81b3.js",
+    "static/js/2.50023f36.chunk.js",
+    "static/css/main.5259dc9a.chunk.css",
+    "static/js/main.3026b525.chunk.js"
+  ]
+}
