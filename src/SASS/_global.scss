@@ -46,6 +46,11 @@
 
 
 ::-webkit-scrollbar {
+  width: 0px;
+}
+
+@include mq(large){
+::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
@@ -57,7 +62,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #fff;
 }
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
 a{
     display: block;
@@ -77,5 +86,3 @@ li{
     width:100%;
     min-height: 100vh;
 }
-
-

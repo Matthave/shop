@@ -6,8 +6,19 @@
     width:100%;
     min-height: 100vh;
     background-color: #000;
-    padding-top: 60px;
+
+    padding-top: 87px;
     overflow: hidden;
+
+    @include mq(large){
+        position: relative;
+        z-index: 0;
+        height: 900px;
+        background-image: url("../images/bg__bar.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
     &__bar{
         width:150%;
@@ -15,6 +26,10 @@
         margin:50px 0px;
         background: rgb(3,49,206);
         background: linear-gradient(135deg, rgba(3,49,206,0.25) 0%, rgba(159,36,170,1) 100%);
+
+        @include mq(large){
+            display: none;
+        }
 
     }
 
@@ -27,7 +42,6 @@
     }
 
     &__option{
-        width:100%;
         padding:75px 0px;
         text-transform: uppercase;
         text-align: center;
@@ -37,8 +51,44 @@
         cursor: pointer;
         transition: 0.2s;
 
+        @include mq(large){
+            position: absolute;
+            transform-origin: center;
+            transform:translate(-50%,0)
+            
+        }
+
         &:hover{
             letter-spacing: 5px;
+        }
+    }
+
+    &__optionOne{
+        @include mq(large){
+            top:20%;
+            left:20%;
+        }
+
+        @include mq(xxxlarge){
+            left:30%;
+        }
+    }
+
+    &__optionTwo{
+        @include mq(large){
+            top:20%;
+            left:80%;
+        }
+
+        @include mq(xxxlarge){
+            left:70%;
+        }
+    }
+
+    &__optionThree{
+        @include mq(large){
+            top:60%;
+            left:50%;
         }
     }
 }

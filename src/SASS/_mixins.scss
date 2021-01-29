@@ -5,6 +5,7 @@ medium: (min-width: 800px),
 large: (min-width: 1024px),
 xlarge: (min-width: 1200px),
 xxlarge: (min-width: 1440px),
+xxxlarge: (min-width: 1650px),
 );
 
 @mixin mq($breakpoint) {
@@ -15,3 +16,59 @@ xxlarge: (min-width: 1440px),
     }
   }
 } 
+
+
+@mixin input {
+  width:230px;
+  height: 45px;
+  background-color: rgba(0,0,0,0.75);
+  border:1px solid #9F24AA;
+  padding: 10px 15px;
+  margin-bottom:30px;
+  font-size: 20px;
+  color:#fff;
+
+  @include mq(small){
+      width:300px;
+      height: 55px;
+  }
+
+  &::placeholder{
+     font-size: 15px;
+      color:#fff;
+  }
+}
+
+@mixin formBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width:200px;
+  height: 40px;
+  border:1px solid #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  color:#fff;
+  transition: 0.2s;
+
+  &:hover{
+    color:#000;
+    background-color: #fff;
+  }
+
+  @include mq(small){
+      width:250px;
+      height: 50px;
+      font-size: 20px;
+  }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
