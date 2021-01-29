@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1897.2 903.1" style="enable-background:new 0 0 1897.2 903.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Path_1_1_);}
+	.st1{fill:url(#Path_2_1_);}
+	.st2{fill:url(#SVGID_1_);}
+</style>
+<g id="Group_5" transform="translate(22.026 2)">
+	<polyline id="Rectangle_5_1_" points="933,-2 1878,-2 1878,901 -22,901 -22,-2 923,-2 	"/>
+	<line id="Rectangle_5" x1="923" y1="-2" x2="933" y2="-2"/>
+	
+		<linearGradient id="Path_1_1_" gradientUnits="userSpaceOnUse" x1="489.4664" y1="35.7495" x2="490.4664" y2="36.7495" gradientTransform="matrix(-970.2939 -432.0027 22.0337 -49.4886 476016.0938 214120.7969)">
+		<stop  offset="0" style="stop-color:#0331CE;stop-opacity:0.247"/>
+		<stop  offset="1" style="stop-color:#9F24AA"/>
+	</linearGradient>
+	<path id="Path_1" class="st0" d="M1878.3,901.1L925.9,428.7l4.1-9.1l948.3,470.5V901.1z"/>
+	
+		<linearGradient id="Path_2_1_" gradientUnits="userSpaceOnUse" x1="488.5128" y1="30.9202" x2="489.5125" y2="29.9204" gradientTransform="matrix(972.6395 -433.1119 22.048 49.5132 -475849.6875 210950.2969)">
+		<stop  offset="0" style="stop-color:#0331CE;stop-opacity:0.102"/>
+		<stop  offset="1" style="stop-color:#9F24AA"/>
+	</linearGradient>
+	<path id="Path_2" class="st1" d="M-22,900.9l954.7-473.5l-4.1-9.1L-22,889.9V900.9z"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="488.5804" y1="92.9974" x2="489.5581" y2="92.9974" gradientTransform="matrix(3.079987e-14 503 -10 6.123234e-16 1857.9741 -245830.7656)">
+		<stop  offset="0" style="stop-color:#0331CE;stop-opacity:0.247"/>
+		<stop  offset="1" style="stop-color:#9F24AA"/>
+	</linearGradient>
+	<polyline class="st2" points="923,-2 923,427 933,427 933,-2 	"/>
+</g>
+</svg>
