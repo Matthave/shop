@@ -19,12 +19,12 @@ xxxlarge: (min-width: 1650px),
 
 
 @mixin input {
+  position: relative;
   width:230px;
   height: 45px;
   background-color: rgba(0,0,0,0.75);
   border:1px solid #9F24AA;
   padding: 10px 15px;
-  margin-bottom:30px;
   font-size: 20px;
   color:#fff;
 
@@ -49,6 +49,7 @@ xxxlarge: (min-width: 1650px),
   border:1px solid #fff;
   background-color: #000;
   text-transform: uppercase;
+  outline: transparent;
   cursor: pointer;
   color:#fff;
   transition: 0.2s;
@@ -63,6 +64,13 @@ xxxlarge: (min-width: 1650px),
       height: 50px;
       font-size: 20px;
   }
+}
+
+@mixin  error {
+  height: 18px;
+  margin: 17.5px 0;
+  font-size: 14px;
+  color:#d64d76;
 }
 
 

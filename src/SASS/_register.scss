@@ -50,10 +50,55 @@
 
     &__input{
         @include input;
+        transition: 0.3s;
+
+
+        &--errorEffect{
+            border:1px solid #d64d76;
+        }
+    }
+
+    &__singleInputWrap{
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__inputPlaceholder{
+        position: absolute;
+        top:50%;
+        left:15px;
+        transform: translate(0%,-50%);
+        background-color: rgba(0,0,0,0.75);
+        padding: 2.5px;
+        color:#fff;
+        transition: 0.2s;
+
+        &--topPosition{
+            top:-2%;
+        }
+    }
+
+    &__lastInput{
+        margin-bottom: 0;
+    }
+
+
+    &__error{
+        @include error;
+    }
+
+    &__lastInput{
+        margin:0;
     }
 
     &__btn{
         @include formBtn;
+    }
+
+    &__success{
+        height: 50px;
+        font-size: 25px;
+        color:#fff;
     }
 
     &__footer{

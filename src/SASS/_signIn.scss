@@ -51,12 +51,50 @@
         margin: auto;
     }
 
+    &__singleInputWrap{
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__inputPlaceholder{
+        position: absolute;
+        top:50%;
+        left:15px;
+        transform: translate(0%,-50%);
+        background-color: rgba(0,0,0,0.75);
+        padding: 2.5px;
+        color:#fff;
+        transition: 0.2s;
+
+        &--topPosition{
+            top:-2%;
+        }
+    }
+
     &__input{
     @include input;
+
+    &--errorEffect{
+        border:1px solid #d64d76;
+    }
+
+    &:focus{
+        & ~ p{
+            top:-2% !important;
+        }
+    }
     }
 
     &__btn{
     @include formBtn;
+    }
+
+    &__error{
+        @include error;
+    }
+
+    &__lastInput{
+        margin:0;
     }
 
     &__footer{
