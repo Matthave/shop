@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { NavLink} from "react-router-dom";
 import cx from "classnames";
+import $ from "jquery";
 import logo from '../images/mp.svg'
 
 function Navigation({executeScroll}) {
@@ -18,6 +19,12 @@ function Navigation({executeScroll}) {
         window.addEventListener("scroll", ()=> windowScrollFeature());
     }, []) 
 
+    
+    const scrollToShop = () => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#shop").offset().top - 90,
+        }, 1000);
+    }
 
     const burgerOnClick = () =>{
         setShowMobileNav(!showMobileNav);
@@ -60,7 +67,7 @@ function Navigation({executeScroll}) {
                     <>
                      <li className="nav__li"><NavLink to="/" className="nav__link">Home</NavLink></li>
                     <li className="nav__li"><NavLink to="/" className="nav__link">About a brand</NavLink></li>
-                    <li className="nav__li"><p className="nav__link" onClick={executeScroll}>Shop</p></li>
+                    <li className="nav__li nav__liShop" onClick={()=>scrollToShop()}><p className="nav__link">Shop</p></li>
                     <li className="nav__li"><NavLink to="/" className="nav__link"><img className="nav__logo" src={logo} alt=""/></NavLink></li>
                     <li className="nav__li"><NavLink to="/sign-in" className="nav__link">Your Account</NavLink></li>
                     <li className="nav__li"><NavLink to="/"  className="nav__link">Basket</NavLink></li>

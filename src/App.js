@@ -13,7 +13,7 @@ function App() {
 
   const executeScroll = () => {
     if(shopRef.current){
-      shopRef.current.scrollIntoView() ;
+      shopRef.current.scrollIntoView();
     }
   }
 

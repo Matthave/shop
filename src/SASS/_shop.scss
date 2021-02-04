@@ -1,8 +1,104 @@
 .shop{
+    position: relative;
+    height: 300vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width:100%;
-    min-height: 100vh;
-    background-image: url("../images/bg__violet.png");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    &__bgOne{
+        top:0;
+        position: absolute;
+        width:100%;
+        height: 150vh;
+        background-image: url("../images/up.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    &__bgTwo{
+        top:50%;
+        position: absolute;
+        width:100%;
+        height: 150vh;
+        background-image: url("../images/down.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    &__contentWrap{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width:100%;
+        max-width: 1675px;
+
+        @include mq(medium){
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:290px;
+        height: 415px;
+        background-color: rgba(0,0,0,0.67);
+        border:1px solid #9F24AA;
+        margin-bottom: 30px;
+        padding:25px 0px;
+
+        @include mq(medium){        
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        @include mq(large){
+            width:350px;
+            height: 415px;
+            border:none;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.shopBox{
+    color:#fff;
+    &__title{
+        font-size: 30px;
+    }
+
+    &__text{
+        max-width: 241px;
+        text-align: center;
+        margin:40px 0px;
+        font-size: 18px;
+    }
+
+    &__btn{
+        width:100%;
+        height: 50px;
+        background: rgb(159,36,170);
+        background: linear-gradient(135deg, rgba(159,36,170,1) 0%, rgba(3,49,206,0.25) 100%);
+        cursor: pointer;
+        font-size: 30px;
+        color:#fff;
+
+    }
 }
